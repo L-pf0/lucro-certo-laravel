@@ -27,7 +27,7 @@ O LucroCerto centraliza o controle financeiro da produção em um único sistema
 
 ---
 
-## Stack
+## Tecnologias
 
 | Camada | Tecnologia |
 |---|---|
@@ -36,32 +36,6 @@ O LucroCerto centraliza o controle financeiro da produção em um único sistema
 | Banco de Dados | MySQL · MySQL Workbench |
 | Ambiente local | Laravel Herd |
 | Versionamento | Git · GitHub |
-
----
-
-## Como rodar localmente
-
-```bash
-# Clone o repositório
-git clone https://github.com/L-pf0/lucro-certo-laravel.git
-cd lucro-certo-laravel
-
-# Instale as dependências
-composer install
-npm install
-
-# Configure o ambiente
-cp .env.example .env
-php artisan key:generate
-
-# Configure o banco de dados no .env e rode as migrations
-php artisan migrate --seed
-
-# Inicie o servidor (via Herd ou artisan)
-php artisan serve
-```
-
-Acesse em `http://localhost:8000`
 
 ---
 
